@@ -17,13 +17,17 @@ const CTA = () => {
             </h2>
             
             <p className="mb-8 text-lg text-muted-foreground">
-              Junte-se a centenas de profissionais que já economizam horas toda semana com o Agendaí.
+              Junte-se a centenas de profissionais que já economizam horas toda semana com o Agendaí. Por menos de R$ 1 por dia.
             </p>
             
             <div className="mb-10 flex flex-wrap justify-center gap-4 text-sm">
               <div className="flex items-center gap-2">
                 <CheckCircle2 className="h-5 w-5 text-primary" />
-                <span>Configuração em 2 minutos</span>
+                <span>30 dias grátis</span>
+              </div>
+              <div className="flex items-center gap-2">
+                <CheckCircle2 className="h-5 w-5 text-primary" />
+                <span>Depois R$ 29,90/mês</span>
               </div>
               <div className="flex items-center gap-2">
                 <CheckCircle2 className="h-5 w-5 text-primary" />
@@ -37,7 +41,7 @@ const CTA = () => {
             
             <div className="flex flex-col items-center gap-4 sm:flex-row sm:justify-center">
               <Button variant="hero" size="xl" className="group">
-                Comece Gratuitamente Agora
+                Comece Seu Teste de 30 Dias
                 <ArrowRight className="transition-transform group-hover:translate-x-1" />
               </Button>
               <Button variant="ghost" size="xl">
@@ -45,9 +49,14 @@ const CTA = () => {
               </Button>
             </div>
             
-            <p className="mt-8 text-sm text-muted-foreground">
-              Experimente grátis por 14 dias. Cancele quando quiser, sem burocracia.
-            </p>
+            <div className="mt-8 space-y-2 text-sm text-muted-foreground">
+              <p className="font-medium">
+                Experimente grátis por 30 dias. Depois só R$ 29,90/mês.
+              </p>
+              <p>
+                Cancele quando quiser, sem burocracia. <span className="text-primary font-medium">Menos de R$ 1 por dia</span> para nunca mais perder compromissos.
+              </p>
+            </div>
           </div>
         </div>
       </div>
