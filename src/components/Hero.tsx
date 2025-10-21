@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Calendar, Clock, Zap } from "lucide-react";
 import heroImage from "@/assets/hero-calendar.jpg";
@@ -25,12 +26,14 @@ const Hero = () => {
             </p>
             
             <div className="flex flex-col gap-4 sm:flex-row">
-              <Button variant="hero" size="xl" className="group">
-                Teste Grátis por 30 Dias
-                <Calendar className="transition-transform group-hover:scale-110" />
+              <Button asChild variant="hero" size="xl" className="group">
+                <Link to="/agendar">
+                  Teste Grátis por 30 Dias
+                  <Calendar className="transition-transform group-hover:scale-110" />
+                </Link>
               </Button>
-              <Button variant="outlineHero" size="xl">
-                Ver Demonstração
+              <Button asChild variant="outlineHero" size="xl">
+                <Link to="/agendar">Ver Demonstração</Link>
               </Button>
             </div>
             
